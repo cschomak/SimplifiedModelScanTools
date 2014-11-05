@@ -1,0 +1,4 @@
+Point Acceptance AcceptanceCorrected AcceptancePercent ContaminationRelToSignal   ExpR  ExpRM1  ExpRP1 ExpXsecLimit ExpXsecLimitasym    ObsR ObsRTheoM1 ObsRTheoP1 ObsXsecLimit ObsXsecLimitasym R_firstguess Xsection
+-----+----------+-------------------+-----------------+------------------------+------+-------+-------+------------+----------------+-------+----------+----------+------------+----------------+------------+--------
+-1    -0         -73710.1            -0                -inf                     150.06 119.482 220.039 1.22149      1.32021          296.361 296.361    296.361    2.41238      2.40764          156.831      0.00814 
+

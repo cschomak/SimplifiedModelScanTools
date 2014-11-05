@@ -1,0 +1,191 @@
+// $Id: StyleSettings_SinglePhoton_8TeV.cc,v 1.1 2012/06/29 20:27:21 auterman Exp $
+
+/*** ------------------------------------------------------------------------------------------------------- ***
+     TheBetterPlotScript, a tool to plot final results, limits and exclusion contours, based on 'PlotScript'
+
+     Christian Autermann, Hamburg University/LPC, February 2012
+ *** ------------------------------------------------------------------------------------------------------- ***/
+
+#include <iostream>
+
+#include "TString.h"
+#include "TStyle.h"
+#include "TLatex.h"
+#include "TGraph.h"
+
+#include "StyleSettings.h"
+#include "OldExclusionContours.h"
+#include "Overview.h"
+
+void SetDefault(style * s=0)
+{
+  if (!s) return;
+  if (s->leg) {
+    s->leg->SetBorderSize(0);
+    s->leg->SetLineColor(0);
+    s->leg->SetFillColor(10);
+    s->leg->SetFillStyle(1001);
+    s->leg->SetTextFont(42);
+    s->leg->SetTextSize(0.03);
+  }
+  if (s->excluded) {
+    s->excluded->SetNDC(true);
+    s->excluded->SetTextColor(1);
+    s->excluded->SetTextFont(43);
+    s->excluded->SetTextSize(25);
+  }
+  if (s->cmsprelim) {
+    s->cmsprelim->SetNDC(true);
+    s->cmsprelim->SetTextColor(1);
+    s->cmsprelim->SetTextFont(43);
+    s->cmsprelim->SetTextSize(20);
+  }
+  if (s->lumi) {
+    s->lumi->SetNDC(true);
+    s->lumi->SetTextColor(1);
+    s->lumi->SetTextFont(43);
+    s->lumi->SetTextSize(25);
+  }
+  if (s->cms) {
+    s->cms->SetNDC(true);
+    s->cms->SetTextColor(1);
+    s->cms->SetTextFont(43);
+    s->cms->SetTextSize(25);
+  }
+  s->lumiTemperaturePlot = new TLatex(0.48, 0.912, "L_{int} = 19.8 fb^{  -1},    SF, central signal region");
+  s->lumiTemperaturePlot->SetNDC(true);
+  s->lumiTemperaturePlot->SetTextColor(1);
+  s->lumiTemperaturePlot->SetTextFont(43);
+  s->lumiTemperaturePlot->SetTextSize(25);
+  s->cmsTemperaturePlot = new TLatex(0.18, 0.912, "#bf{CMS}   #sqrt{s} = 8 TeV");
+  s->cmsTemperaturePlot->SetNDC(true);
+  s->cmsTemperaturePlot->SetTextColor(1);
+  s->cmsTemperaturePlot->SetTextFont(43);
+  s->cmsTemperaturePlot->SetTextSize(25);
+  s->cmsprelimTemperaturePlot = new TLatex(0.18, 0.912, "#bf{CMS preliminary}   #sqrt{s} = 8 TeV");
+  s->cmsprelimTemperaturePlot->SetNDC(true);
+  s->cmsprelimTemperaturePlot->SetTextColor(1);
+  s->cmsprelimTemperaturePlot->SetTextFont(43);
+  s->cmsprelimTemperaturePlot->SetTextSize(25);
+
+}
+
+void Draw_Fixed_Neutralino_Limits(style * s=0, TLegend*l=0) {
+  TGraph * exp8TeVFixed_Neutralino = Exp_Fixed_Neutralino();
+  exp8TeVFixed_Neutralino->Draw();
+  if (l) l->AddEntry(exp8TeVFixed_Neutralino, "Exp. 8 TeV, 19.4 fb^{-1}","l");
+}
+
+void Draw_Fixed_Edge_Limits(style * s=0, TLegend*l=0) {
+  TGraph * exp8TeVFixed_Edge = Exp_Fixed_Edge();
+  exp8TeVFixed_Edge->Draw();
+  if (l) l->AddEntry(exp8TeVFixed_Edge, "Exp. 8 TeV, 19.4 fb^{-1}","l");
+}
+
+
+/// ----------- Fixed Neutralino ------------ /// ----------------------------------------------------------------------------------
+
+void Draw_Fixed_Neutralino_CoverUp(style * s=0, TLegend*l=0) {
+	TGraph*cover = new TGraph(0);
+	cover->SetPoint(0, 200,  300);
+	cover->SetPoint(1, 880,   920);
+	cover->SetPoint(2, 900,   900);
+	cover->SetPoint(3,    0,    0);
+	cover->SetFillColor(kWhite);
+	//cover->SetLineColor(kBlack);
+	cover->Draw("f");
+
+	TGraph*Fixed_Neutralino = new TGraph(0);
+	Fixed_Neutralino->SetPoint(0, 50, 55);
+	Fixed_Neutralino->SetPoint(1, 3000, 3005);
+	Fixed_Neutralino->SetPoint(2, 3000, 50);
+	Fixed_Neutralino->SetPoint(3, 50, 50);
+	Fixed_Neutralino->SetFillColor(kGray);
+	Fixed_Neutralino->Draw("f");
+
+	TLatex tex;
+	tex.SetTextSize(0.03);
+	tex.SetTextFont(62);
+	tex.SetNDC(true);
+	tex.DrawLatex(0.6, 0.25, "Fixed Neutralino");
+	gPad->RedrawAxis();
+}
+
+
+style* Fixed_Neutralino_Style(){ 
+  style * s = new style();
+  s->leg       = new TLegend(0.26,0.71,0.69,0.85,"#splitline{#tilde{#chi}^{0} LSP}{m_{#tilde{#chi}_{1}^{0}} = 200 GeV}");
+  s->lumi      = new TLatex(0.58, 0.902, "L_{int} = 19.4 fb^{  -1}   SF, central signal region");
+  s->cms       = new TLatex(0.21, 0.902, "#bf{CMS}    #sqrt{s} = 8 TeV");
+  s->cmsprelim = new TLatex(0.21, 0.902, "#bf{CMS preliminary}    #sqrt{s} = 8 TeV");
+  s->excluded  = new TLatex(0.3, 0.4, "Excluded");
+  s->smooth_flag=2;
+  s->smooth_points=25;
+  s->PostExclusionPlotting=Draw_Fixed_Neutralino_CoverUp;
+  s->iCLsObsExcl=1;  
+  s->iCLsExpExcl=0;  
+  s->iCLsExpExclm1=0;
+  s->iCLsExpExclp1=0;
+  s->iCLsObsTheom1=0;
+  s->iCLsObsTheop1=0;
+  s->MinXsecZ=0.001;
+  s->MaxXsecZ=0.5;
+  s->MinAccZ=0;
+  s->MaxAccZ=0.8;
+
+  SetDefault(s);
+  return s;
+}
+
+/// ----------- Fixed Edge ------------ /// ----------------------------------------------------------------------------------
+void Draw_Fixed_Edge_CoverUp(style * s=0, TLegend*l=0) {
+	TGraph*cover = new TGraph(0);
+	cover->SetPoint(0, 300,  350);
+	cover->SetPoint(1, 950, 1000);
+	cover->SetPoint(2, 1000, 1000);
+	cover->SetPoint(3,    0,    0);
+	cover->SetFillColor(kWhite);
+	//cover->SetLineColor(kBlack);
+//	cover->Draw("f");
+
+	TGraph*gluinoNLSP = new TGraph(0);
+	Fixed_Edge->SetPoint(0, 50, 50);
+	Fixed_Edge->SetPoint(1, 3000, 3000);
+	Fixed_Edge->SetPoint(2, 3000, 50);
+	Fixed_Edge->SetPoint(3, 50, 50);
+	Fixed_Edge->SetFillColor(kGray);
+	Fixed_Edge->Draw("f");
+
+	TLatex tex;
+	tex.SetTextSize(0.03);
+	tex.SetTextFont(62);
+	tex.SetNDC(true);
+	tex.DrawLatex(0.8, 0.5, "Fixed Edge");
+	gPad->RedrawAxis();
+}
+
+style* Fixed_Edge_Style(){ 
+  style * s = new style();
+  s->leg       = new TLegend(0.25,0.65,0.68,0.85,"#splitline{#tilde{#chi}^{0} LSP}{m_{#tilde{#chi}_{2}^{0}}-m_{#tilde{#chi}_{1}^{0}} =70 GeV}");
+  s->lumi      = new TLatex(0.58, 0.902, "L_{int} = 19.4 fb^{  -1}   SF, central signal region");
+  s->cms       = new TLatex(0.21, 0.902, "#bf{CMS}    #sqrt{s} = 8 TeV");
+  s->cmsprelim = new TLatex(0.21, 0.902, "#bf{CMS preliminary}    #sqrt{s} = 8 TeV");
+  s->excluded  = new TLatex(0.29, 0.3, "Excluded");
+  s->smooth_flag=2;
+  s->smooth_points=15;
+  s->second_smooth=5;
+  s->PostExclusionPlotting=Draw_Fixed_Edge_CoverUp;
+  s->iCLsObsExcl=0;  
+  s->iCLsExpExcl=0;  
+  s->iCLsExpExclm1=0;
+  s->iCLsExpExclp1=0;
+  s->iCLsObsTheom1=0;
+  s->iCLsObsTheop1=0;
+
+  s->MinXsecZ=0.01;
+  s->MaxXsecZ=20;
+
+  SetDefault(s);
+
+  return s;
+}

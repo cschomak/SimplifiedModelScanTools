@@ -1,0 +1,47 @@
+# SUSY_Simplified_Model_Madgraph_FastSim_T6bblledge_475_475_405_8TeV.txt
+
+ sbottom = 475 
+ neutralino 2 = 475 
+ Xsection = 0.1193 
+ R_firstguess = 10 
+
+CLs observed asymptotic = 50.8442
+CLs expected asymptotic = 20.4375
+CLs expected m2sigma asymptotic = 10.8574
+CLs expected m1sigma asymptotic = 14.5622
+CLs expected p1sigma asymptotic = 29.1542
+CLs expected p2sigma asymptotic = 40.6245
+
+CLs expected profile likelihood = 
+CLs expected m2sigma profile likelihood = 
+CLs expected m1sigma profile likelihood = 
+CLs expected p1sigma profile likelihood = 
+CLs expected p2sigma profile likelihood = 
+
+PrelimR scanned r = 10 20 40 40 40 40 80 80 80 160 160 160 160 160 160 77.4574 79.2105 205.675 149.586 120.18
+PrelimR CLs for scanned r =  0.999333   0.999333   0.9995   0.9995   0.9995   0.998833   0.999333   1   0.998833   0.9995   0.999667   1   0.999833   0.999667   0.999667   0.999333   0.9995   0.9995   0.999   0.999167 
+PrelimR CLsUnc for scanned r =  0.000816315  0.000333222  0.000288603  0.000288603  0.000288603  0.000440701  0.000333222  0  0.000440701  0.000288603  0.000235663  0  0.000166653  0.000235663  0.000235663  0.000333222  0.000288603  0.000288603  0.000408044  0.000372523
+PrelimR CLb for scanned r =  0.999333   1   1   1   1   1   1    1   1   1    1   1   1   1   1   1   1   1 
+PrelimR CLbUnc for scanned r =  0.000666444  0  0  0  0  0  0   0  0  0   0  0  0  0  0  0  0  0
+PrelimR CLsb for scanned r =  0.998667   0.999333   0.9995   0.9995   0.9995   0.998833   0.999333   1   0.998833   0.9995   0.999667   1   0.999833   0.999667   0.999667   0.999333   0.9995   0.9995   0.999   0.999167 
+PrelimR CLsbUnc for scanned r =  0.00047109  0.000333222  0.000288603  0.000288603  0.000288603  0.000440701  0.000333222  0  0.000440701  0.000288603  0.000235663  0  0.000166653  0.000235663  0.000235663  0.000333222  0.000288603  0.000288603  0.000408044  0.000372523
+Preliminary R = 117.001
+scanned r = 11.700100000000000 17.355148333333333 23.010196666666666 28.665244999999999 34.320293333333332 39.975341666666665 45.630389999999998 51.285438333333331 56.940486666666664 62.595534999999997 68.250583333333330 73.905631666666663 79.560679999999996 85.215728333333329 90.870776666666662 96.525824999999995 102.180873333333328 107.835921666666661 113.490969999999994 119.146018333333327 136.111163333333327 153.076308333333327 170.041453333333327 187.006598333333327 203.971743333333327 220.936888333333327 237.902033333333327 254.867178333333327 271.832323333333327 288.797468333333327 305.762613333333327 322.727758333333327 339.692903333333327
+CLs for scanned r =                                 
+CLsUnc for scanned r =                                 
+CLb for scanned r =                                 
+CLbUnc for scanned r =                                 
+CLsb for scanned r =                                 
+CLsbUnc for scanned r =                                 
+CLs observed = 30
+CLs observed error= 0
+CLs expected = 20.5781
+CLs expected error= 0.09337
+CLs expected m2sigma = 11.7001
+CLs expected m2sigma error= 5.655
+CLs expected m1sigma = 15.6729
+CLs expected m1sigma error= 0.364363
+CLs expected p1sigma = 29.0652
+CLs expected p1sigma error= 0.0907562
+CLs expected p2sigma = 30
+CLs expected p2sigma error= 0

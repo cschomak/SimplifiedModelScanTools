@@ -1,0 +1,27 @@
+#!/bin/bash
+
+
+#####################################################################
+# Default scale used by float functions.
+float_scale=15
+
+
+#####################################################################
+# Evaluate a floating point number expression.
+function float_eval()
+{
+    local stat=0
+    local result=0.0
+    if [[ $# -gt 0 ]]; then
+        result=$(echo "scale=$float_scale; $*" | bc -q 2>/dev/null)
+        stat=$?
+        if [[ $stat -eq 0  &&  -z "$result" ]]; then stat=1; fi
+    fi
+    echo $result
+    return $stat
+}
+
+
+d=$(float_eval "($2 - $1) / $2" )
+
+echo "($2 - $1) / $2 = $d"

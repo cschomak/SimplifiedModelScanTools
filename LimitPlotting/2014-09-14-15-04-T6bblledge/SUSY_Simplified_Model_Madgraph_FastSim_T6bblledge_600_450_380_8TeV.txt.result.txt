@@ -1,0 +1,47 @@
+# SUSY_Simplified_Model_Madgraph_FastSim_T6bblledge_600_450_380_8TeV.txt
+
+ sbottom = 600 
+ neutralino 2 = 450 
+ Xsection = 0.0248 
+ R_firstguess = 11.8159932913 
+
+CLs observed asymptotic = 26.0542
+CLs expected asymptotic = 10.7188
+CLs expected m2sigma asymptotic = 5.8409
+CLs expected m1sigma asymptotic = 7.7844
+CLs expected p1sigma asymptotic = 14.9486
+CLs expected p2sigma asymptotic = 19.9803
+
+CLs expected profile likelihood = 
+CLs expected m2sigma profile likelihood = 
+CLs expected m1sigma profile likelihood = 
+CLs expected p1sigma profile likelihood = 
+CLs expected p2sigma profile likelihood = 
+
+PrelimR scanned r = 11.8159932913 23.632 47.264 35.448
+PrelimR CLs for scanned r =  0.999333   0.118245   0.000501337  
+PrelimR CLsUnc for scanned r =  0.000333222  0.00417093  0.000289375 
+PrelimR CLb for scanned r =  1   0.999333   0.997333  
+PrelimR CLbUnc for scanned r =  0  0.000666444  0.00133155 
+PrelimR CLsb for scanned r =  0.999333   0.118167   0.0005  
+PrelimR CLsbUnc for scanned r =  0.000333222  0.0041674  0.000288603 
+Preliminary R = 
+scanned r = 
+CLs for scanned r = 
+CLsUnc for scanned r =  0.000333222  0.00417093  0.000289375 
+CLb for scanned r =  1   0.999333   0.997333  
+CLbUnc for scanned r =  0  0.000666444  0.00133155 
+CLsb for scanned r =  0.999333   0.118167   0.0005  
+CLsbUnc for scanned r =  0.000333222  0.0041674  0.000288603 
+CLs observed = 25.4939
+CLs observed error= 0.206756
+CLs expected = 11.816
+CLs expected error= 11.816
+CLs expected m2sigma = 11.816
+CLs expected m2sigma error= 0
+CLs expected m1sigma = 11.816
+CLs expected m1sigma error= 0
+CLs expected p1sigma = 14.1965
+CLs expected p1sigma error= 0.254612
+CLs expected p2sigma = 18.8182
+CLs expected p2sigma error= 0.23379

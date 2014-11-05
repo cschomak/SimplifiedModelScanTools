@@ -1,0 +1,153 @@
+{
+//=========Macro generated from canvas: c_squ/c_squ
+//=========  (Fri Jun 27 19:47:04 2014) by ROOT version5.34/07
+   TCanvas *c_squ = new TCanvas("c_squ", "c_squ",1,1,900,776);
+   gStyle->SetOptStat(0);
+   c_squ->SetHighLightColor(2);
+   c_squ->Range(59.79729,-39.18919,769.2568,805.4054);
+   c_squ->SetFillColor(0);
+   c_squ->SetBorderMode(0);
+   c_squ->SetBorderSize(2);
+   c_squ->SetTickx(1);
+   c_squ->SetTicky(1);
+   c_squ->SetLeftMargin(0.18);
+   c_squ->SetRightMargin(0.08);
+   c_squ->SetBottomMargin(0.15);
+   c_squ->SetFrameFillColor(1);
+   c_squ->SetFrameFillStyle(0);
+   c_squ->SetFrameLineStyle(0);
+   c_squ->SetFrameBorderMode(0);
+   
+   TH2F *266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV] = new TH2F("266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]","",21,187.5,712.5,25,87.5,712.5);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->SetStats(0);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->SetLineStyle(0);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetXaxis()->SetTitle("M_{sbottom} [GeV]");
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetXaxis()->SetNdivisions(505);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetXaxis()->SetLabelFont(42);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetXaxis()->SetLabelOffset(0.007);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetXaxis()->SetTitleSize(32);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetXaxis()->SetTitleFont(43);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetYaxis()->SetTitle("M_{neutralino 2} [GeV]");
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetYaxis()->SetLabelFont(42);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetYaxis()->SetLabelOffset(0.007);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetYaxis()->SetTitleSize(32);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetYaxis()->SetTitleOffset(1.5);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetYaxis()->SetTitleFont(43);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetZaxis()->SetLabelFont(42);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetZaxis()->SetLabelOffset(0.007);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetZaxis()->SetTitleSize(32);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetZaxis()->SetTitleOffset(1.2);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->GetZaxis()->SetTitleFont(43);
+   266647746_M_{sbottom} [GeV]_M_{neutralino 2} [GeV]->Draw("h");
+   
+   TGraph *graph = new TGraph(14);
+   graph->SetName("Observed limit");
+   graph->SetTitle("Observed limit");
+   graph->SetFillColor(100);
+
+   Int_t ci;   // for color index setting
+   ci = TColor::GetColor("#0000ff");
+   graph->SetLineColor(ci);
+   graph->SetLineWidth(3);
+   graph->SetPoint(0,362.5000001,100);
+   graph->SetPoint(1,362.5000001,125);
+   graph->SetPoint(2,362.2089999,149.7089999);
+   graph->SetPoint(3,360.5675625,173.0675625);
+   graph->SetPoint(4,356.0965692,193.5965692);
+   graph->SetPoint(5,347.7765624,210.2765624);
+   graph->SetPoint(6,335.2765624,222.7765624);
+   graph->SetPoint(7,318.5965692,231.0965692);
+   graph->SetPoint(8,298.0675625,235.619123);
+   graph->SetPoint(9,274.9484395,237.1572754);
+   graph->SetPoint(10,251.6931619,236.1204745);
+   graph->SetPoint(11,230.2515968,232.3088279);
+   graph->SetPoint(12,212.5286324,226.2935392);
+   graph->SetPoint(13,200,221.2121297);
+   
+   TH1F *Graph_Graph1 = new TH1F("Graph_Graph1","Observed limit",100,183.75,378.75);
+   Graph_Graph1->SetMinimum(86.28427);
+   Graph_Graph1->SetMaximum(250.873);
+   Graph_Graph1->SetDirectory(0);
+   Graph_Graph1->SetStats(0);
+   Graph_Graph1->SetLineStyle(0);
+   Graph_Graph1->GetXaxis()->SetNdivisions(505);
+   Graph_Graph1->GetXaxis()->SetLabelFont(42);
+   Graph_Graph1->GetXaxis()->SetLabelOffset(0.007);
+   Graph_Graph1->GetXaxis()->SetTitleSize(32);
+   Graph_Graph1->GetXaxis()->SetTitleFont(43);
+   Graph_Graph1->GetYaxis()->SetLabelFont(42);
+   Graph_Graph1->GetYaxis()->SetLabelOffset(0.007);
+   Graph_Graph1->GetYaxis()->SetTitleSize(32);
+   Graph_Graph1->GetYaxis()->SetTitleOffset(1.5);
+   Graph_Graph1->GetYaxis()->SetTitleFont(43);
+   Graph_Graph1->GetZaxis()->SetLabelFont(42);
+   Graph_Graph1->GetZaxis()->SetLabelOffset(0.007);
+   Graph_Graph1->GetZaxis()->SetTitleSize(32);
+   Graph_Graph1->GetZaxis()->SetTitleOffset(1.2);
+   Graph_Graph1->GetZaxis()->SetTitleFont(43);
+   graph->SetHistogram(Graph_Graph1);
+   
+   graph->Draw("l");
+   
+   graph = new TGraph(24);
+   graph->SetName("Expected limit");
+   graph->SetTitle("Expected limit");
+   graph->SetFillColor(100);
+
+   ci = TColor::GetColor("#cc3300");
+   graph->SetLineColor(ci);
+   graph->SetLineStyle(9);
+   graph->SetLineWidth(3);
+   graph->SetPoint(0,462.5000001,100);
+   graph->SetPoint(1,462.5000001,125);
+   graph->SetPoint(2,462.5000001,150);
+   graph->SetPoint(3,462.2089999,174.7089999);
+   graph->SetPoint(4,460.5675625,198.0675625);
+   graph->SetPoint(5,456.3875694,218.8875693);
+   graph->SetPoint(6,449.7089999,237.2089999);
+   graph->SetPoint(7,441.6799932,254.1799932);
+   graph->SetPoint(8,433.0290068,270.5290068);
+   graph->SetPoint(9,423.0675625,285.5675625);
+   graph->SetPoint(10,410.2765624,297.7765624);
+   graph->SetPoint(11,393.5965692,306.0965692);
+   graph->SetPoint(12,373.0675625,310.619123);
+   graph->SetPoint(13,349.9484395,312.1572754);
+   graph->SetPoint(14,326.6931619,311.1204745);
+   graph->SetPoint(15,305.8505188,306.9662673);
+   graph->SetPoint(16,288.5627395,299.121826);
+   graph->SetPoint(17,274.2367366,288.3179736);
+   graph->SetPoint(18,261.3910263,276.1058241);
+   graph->SetPoint(19,248.8941759,263.6089737);
+   graph->SetPoint(20,236.3910263,251.1058241);
+   graph->SetPoint(21,223.6378146,238.9515344);
+   graph->SetPoint(22,211.0950181,228.2775373);
+   graph->SetPoint(23,200,221.5031298);
+   
+   TH1F *Graph_Graph2 = new TH1F("Graph_Graph2","Expected limit",100,173.75,488.75);
+   Graph_Graph2->SetMinimum(78.78427);
+   Graph_Graph2->SetMaximum(333.373);
+   Graph_Graph2->SetDirectory(0);
+   Graph_Graph2->SetStats(0);
+   Graph_Graph2->SetLineStyle(0);
+   Graph_Graph2->GetXaxis()->SetNdivisions(505);
+   Graph_Graph2->GetXaxis()->SetLabelFont(42);
+   Graph_Graph2->GetXaxis()->SetLabelOffset(0.007);
+   Graph_Graph2->GetXaxis()->SetTitleSize(32);
+   Graph_Graph2->GetXaxis()->SetTitleFont(43);
+   Graph_Graph2->GetYaxis()->SetLabelFont(42);
+   Graph_Graph2->GetYaxis()->SetLabelOffset(0.007);
+   Graph_Graph2->GetYaxis()->SetTitleSize(32);
+   Graph_Graph2->GetYaxis()->SetTitleOffset(1.5);
+   Graph_Graph2->GetYaxis()->SetTitleFont(43);
+   Graph_Graph2->GetZaxis()->SetLabelFont(42);
+   Graph_Graph2->GetZaxis()->SetLabelOffset(0.007);
+   Graph_Graph2->GetZaxis()->SetTitleSize(32);
+   Graph_Graph2->GetZaxis()->SetTitleOffset(1.2);
+   Graph_Graph2->GetZaxis()->SetTitleFont(43);
+   graph->SetHistogram(Graph_Graph2);
+   
+   graph->Draw("l");
+   c_squ->Modified();
+   c_squ->cd();
+   c_squ->SetSelected(c_squ);
+}

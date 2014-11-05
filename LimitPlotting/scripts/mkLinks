@@ -1,0 +1,14 @@
+#!/bin/bash
+#rm -f $1/filelist_ch*.txt
+#ls $1/*_bin0.txt.result.txt > $1/filelist_ch0.txt
+#ls $1/*_bin1.txt.result.txt > $1/filelist_ch1.txt
+#ls $1/*_bin2.txt.result.txt > $1/filelist_ch2.txt
+#ls $1/*_bin3.txt.result.txt > $1/filelist_ch3.txt
+#ls $1/*_bin4.txt.result.txt > $1/filelist_ch4.txt
+#ls $1/*_bin5.txt.result.txt > $1/filelist_ch5.txt
+
+rm -f $1/filelist.txt
+for j in `find $1/. -name "*.txt.result.txt"`
+do
+   	ls $j >> $1/filelist.txt
+done	
