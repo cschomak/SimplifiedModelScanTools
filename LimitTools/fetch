@@ -1,0 +1,11 @@
+#!/bin/bash
+#k5log -principal auterman -c desy.de
+cp $1/job*/*.result.txt $1/.
+DIR=`basename $1`
+ls $1/*.result.txt > $1/filelist.txt
+tar -cf $DIR.tar $1/*.txt
+gzip $DIR.tar
+#rm -f $1/*.txt
+scp $DIR.tar.gz  schomakers@portal.physik.rwth-aachen.de:LimitResults/.
+echo ""
+echo "scp  schomakers@portal.physik.rwth-aachen.de:LimitResults/$DIR.tar.gz . ; tar -xvzf $DIR.tar.gz"

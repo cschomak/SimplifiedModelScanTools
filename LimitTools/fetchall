@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for i in `ls -d $*`
+do
+	./fetch $i
+done
+echo "scp *.tar uhh-cms03.desy.de:work/temp/."	

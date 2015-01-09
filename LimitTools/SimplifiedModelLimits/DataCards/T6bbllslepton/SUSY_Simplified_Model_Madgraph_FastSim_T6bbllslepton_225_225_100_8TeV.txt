@@ -1,0 +1,31 @@
+# sbottom = 225 
+# neutralino 2 = 225 
+# Xsection = 9.91 
+# R_firstguess = 0.0617002479066 
+imax 6 number of bins 
+jmax 2 number of processes minus 1 
+kmax 15 number of nuisance parameters 
+---------------------------------------------------------------------------------------------------------------------------------- 
+bin          CentrLowMll   CentrZPeak  CentrHighMll  ForwLowMll   ForwZPeak  ForwHighMll
+observation  860            487          818            163           170         368    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+bin                                 CentrLowMll   CentrLowMll   CentrLowMll  CentrZPeak   CentrZPeak   CentrZPeak  CentrHighMll   CentrHighMll   CentrHighMll   ForwLowMll   ForwLowMll   ForwLowMll  ForwZPeak   ForwZPeak   ForwZPeak  ForwHighMll   ForwHighMll   ForwHighMll  
+process                             SUSY          ZJets         OF           SUSY         ZJets        OF          SUSY           ZJets          OF             SUSY         ZJets        OF          SUSY        ZJets       OF         SUSY          ZJets         OF  
+process                             0             1             2            0            1            2           0              1              2              0            1            2           0           1           2          0             1             2  
+rate                                1549.41060422            8.2            722           628.508571883           116           355          0             2.5             768             208.221809735           2.5           155          117.486395183          42          131         8.67767081768            1.1            430  
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+SigSystUncert               lnN     1.12452818471            -             -            1.12973068582           -            -           1.04426021739             -              -              1.15064358421           -            -           1.11753019796          -           -          1.75778487765            -             -   
+OFSystUncert                lnN     -             -             1.04           -            -            1.039          -              -              1.04             -            -            1.065          -           -           1.061         -             -             1.063  
+ZJetsUncert                 lnN     -             1.32            -            -            1.18           -           -              1.32             -              -            1.4           -           -           1.21          -          -             1.36            -   
+SigStatUncertLowMllCentr    lnN     1.02466318118            -             -            -            -            -           -              -              -              -            -            -           -           -           -          -             -             -   
+SigStatUncertZPeakCentr     lnN     -             -             -            1.0392534336           -            -           -              -              -              -            -            -           -           -           -          -             -             -   
+SigStatUncertHighMllCentr   lnN     -             -             -            -            -            -           1             -              -              -            -            -           -           -           -          -             -             -   
+SigStatUncertLowMllForw     lnN     -             -             -            -            -            -           -              -              -              1.06401843997           -            -           -           -           -          -             -             -   
+SigStatUncertZPeakForw      lnN     -             -             -            -            -            -           -              -              -              -            -            -           1.08838834765          -           -          -             -             -   
+SigStatUncertHighMllForw    lnN     -             -             -            -            -            -           -              -              -              -            -            -           -           -           -          1.5            -             -   
+OFStatUncertLowMllCentr     lnN     -             -             1.037           -            -            -           -              -              -              -            -            -           -           -           -          -             -             -   
+OFStatUncertZPeakCentr      lnN     -             -             -            -            -            1.054          -              -              -              -            -            -           -           -           -          -             -             -   
+OFStatUncertHighMllCentr    lnN     -             -             -            -            -            -           -              -              1.036             -            -            -           -           -           -          -             -             -   
+OFStatUncertLowMllForw      lnN     -             -             -            -            -            -           -              -              -              -            -            1.08          -           -           -          -             -             -   
+OFStatUncertZPeakForw       lnN     -             -             -            -            -            -           -              -              -              -            -            -           -           -           1.092         -             -             -   
+OFStatUncertHighMllForw     lnN     -             -             -            -            -            -           -              -              -              -            -            -           -           -           -          -             -             1.051  

@@ -1,0 +1,31 @@
+# sbottom = 550 
+# neutralino 2 = 200 
+# Xsection = 0.04521 
+# R_firstguess = 3.88111208162 
+imax 6 number of bins 
+jmax 2 number of processes minus 1 
+kmax 15 number of nuisance parameters 
+---------------------------------------------------------------------------------------------------------------------------------- 
+bin          CentrLowMll   CentrZPeak  CentrHighMll  ForwLowMll   ForwZPeak  ForwHighMll
+observation  860            487          818            163           170         368    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+bin                                 CentrLowMll   CentrLowMll   CentrLowMll  CentrZPeak   CentrZPeak   CentrZPeak  CentrHighMll   CentrHighMll   CentrHighMll   ForwLowMll   ForwLowMll   ForwLowMll  ForwZPeak   ForwZPeak   ForwZPeak  ForwHighMll   ForwHighMll   ForwHighMll  
+process                             SUSY          ZJets         OF           SUSY         ZJets        OF          SUSY           ZJets          OF             SUSY         ZJets        OF          SUSY        ZJets       OF         SUSY          ZJets         OF  
+process                             0             1             2            0            1            2           0              1              2              0            1            2           0           1           2          0             1             2  
+rate                                24.631792213            8.2            722           0.00329291237488           116           355          0             2.5             768             2.76213887097           2.5           155          0.00308544746483          42          131         0.00805879119718            1.1            430  
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+SigSystUncert               lnN     1.05003915686            -             -            4.19478242708           -            -           1.03302911195             -              -              1.05229925502           -            -           1.77618883898          -           -          1.43516404315            -             -   
+OFSystUncert                lnN     -             -             1.04           -            -            1.039          -              -              1.04             -            -            1.065          -           -           1.061         -             -             1.063  
+ZJetsUncert                 lnN     -             1.32            -            -            1.18           -           -              1.32             -              -            1.4           -           -           1.21          -          -             1.36            -   
+SigStatUncertLowMllCentr    lnN     1.00955680605            -             -            -            -            -           -              -              -              -            -            -           -           -           -          -             -             -   
+SigStatUncertZPeakCentr     lnN     -             -             -            1.5           -            -           -              -              -              -            -            -           -           -           -          -             -             -   
+SigStatUncertHighMllCentr   lnN     -             -             -            -            -            -           1             -              -              -            -            -           -           -           -          -             -             -   
+SigStatUncertLowMllForw     lnN     -             -             -            -            -            -           -              -              -              1.02786391063           -            -           -           -           -          -             -             -   
+SigStatUncertZPeakForw      lnN     -             -             -            -            -            -           -              -              -              -            -            -           1.4472135955          -           -          -             -             -   
+SigStatUncertHighMllForw    lnN     -             -             -            -            -            -           -              -              -              -            -            -           -           -           -          1.57735026919            -             -   
+OFStatUncertLowMllCentr     lnN     -             -             1.037           -            -            -           -              -              -              -            -            -           -           -           -          -             -             -   
+OFStatUncertZPeakCentr      lnN     -             -             -            -            -            1.054          -              -              -              -            -            -           -           -           -          -             -             -   
+OFStatUncertHighMllCentr    lnN     -             -             -            -            -            -           -              -              1.036             -            -            -           -           -           -          -             -             -   
+OFStatUncertLowMllForw      lnN     -             -             -            -            -            -           -              -              -              -            -            1.08          -           -           -          -             -             -   
+OFStatUncertZPeakForw       lnN     -             -             -            -            -            -           -              -              -              -            -            -           -           -           1.092         -             -             -   
+OFStatUncertHighMllForw     lnN     -             -             -            -            -            -           -              -              -              -            -            -           -           -           -          -             -             1.051  

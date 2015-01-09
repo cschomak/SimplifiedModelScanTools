@@ -1,0 +1,5 @@
+module use -a /afs/desy.de/group/cms/modulefiles/
+module load cmssw/slc5_amd64_gcc472
+setcms
+##cd CMSSW_6_1_1/src
+##cmsenv
